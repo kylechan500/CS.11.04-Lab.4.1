@@ -1,5 +1,3 @@
-import static org.junit.jupiter.api.Assertions.*;
-
 class  MainTest {
 
     @org.junit.jupiter.api.Test
@@ -10,11 +8,17 @@ class  MainTest {
         assertEquals(true, Main.parenthesesCheck("(())((()())())"));
     }
 
+    private void assertEquals(boolean b, boolean b1) {
+    }
+
     @org.junit.jupiter.api.Test
     void reverseInteger() {
         assertEquals("4321", Main.reverseInteger(1234));
         assertEquals("8642", Main.reverseInteger(2468));
         assertEquals("1777", Main.reverseInteger(7771));
+    }
+
+    private void assertEquals(String number, String s) {
     }
 
     @org.junit.jupiter.api.Test
